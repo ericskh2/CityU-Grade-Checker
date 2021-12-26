@@ -1,6 +1,6 @@
 # CityU Grade Checker
 
-![image](https://user-images.githubusercontent.com/42265526/147413336-a9ea5ffb-5553-47ac-995c-98e0e9d0831c.png)
+![image-redacted_dot_app (2)](https://user-images.githubusercontent.com/42265526/147413426-3d94de68-34dd-468b-942e-a2c8f464a21b.png)
 
 This is a python script for automatic notification of CityU AIMS grade updates with telegram bot.
 
