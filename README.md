@@ -22,7 +22,7 @@ Download from here https://chromedriver.chromium.org/downloads if you are using 
 
 Visit https://tecadmin.net/setup-selenium-chromedriver-on-ubuntu/ for details if you are using ubuntu
 
-1. Create a new telegram bot
+3. Create a new telegram bot
 Goto https://telegram.me/BotFather and execute 
 ```
 /newbot
