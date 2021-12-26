@@ -10,14 +10,16 @@ class GradeChecker:
 
     # Edit all configurations including login id and password here
     def configuration(self):
-        self.EID = 'myeid'
-        self.PASSWORD = 'mypassword'
-        self.TELEGRAM_BOT_TOKEN = 'mybottoken'
-        self.TELEGRAM_BOT_VERIFICATIONCODE = 'secret'
-        self.CITYU_AIMS_URL = 'http://www.cityu.edu.hk/cityu/qlink/aims.htm'
-        self.CRAWL_INTERVAL = 30
+        self.EID = 'myeid' # set to your login eid
+        self.PASSWORD = 'mypassword' # set to your login password
+        self.TELEGRAM_BOT_TOKEN = 'mybottoken' # set to your telegram bot token
+        self.TELEGRAM_BOT_VERIFICATIONCODE = 'secret' # this is used to verify you with your telegram bot, you can think a new random password here
+        self.CITYU_AIMS_URL = 'http://www.cityu.edu.hk/cityu/qlink/aims.htm' # do not change this
+        self.CRAWL_INTERVAL = 300 # crawl interval in second, you can try to set a different value 
 
     def setup_selenium(self):
+        # You can uncomment the lines to do some setup if needed
+
         # chrome_bin_path = os.environment.get('GOOGLE_CHROME_BIN')
         # chrome_driver_path = os.environ.get('CHROMEDRIVER_PATH')
 
@@ -27,9 +29,9 @@ class GradeChecker:
         # chrome_options.add_argument('--no-sandbox')
         # chrome_options.add_argument('--disable-dev-sh-usage')
         
-        chrome_driver_path = 'chromedriver.exe'
+        chrome_driver_path = 'chromedriver.exe' # set this to your chrome driver path
         self.driver = webdriver.Chrome(executable_path=chrome_driver_path,chrome_options=chrome_options)
-        
+
     def setup_telegram_bot(self):
         self.tgbot = TGBot(self,self.TELEGRAM_BOT_TOKEN,self.TELEGRAM_BOT_VERIFICATIONCODE)
 
